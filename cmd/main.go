@@ -14,5 +14,5 @@ func main() {
 	app.GET("/user", userHandler.HandleUserShow)
 	app.GET("/clicked", userHandler.HandleUserShow)
 
-	app.Start(":3000")
+	app.Start(":8100")
 }
