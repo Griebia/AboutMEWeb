@@ -13,7 +13,7 @@ jobs:
             go-version: '1.21.4'
 
         - name: Build
-          run: go build -v -buildmode=c-shared -o output.so ./cmd/main.go
+          run: go build -v -buildmode=c-shared -o main.so ./cmd/main.go
 
         - name: Copy file to server
           uses: appleboy/scp-action@master
@@ -22,5 +22,5 @@ jobs:
             username: ${{ secrets.USERNAME }}
             password: ${{ secrets.PASSWORD }}
             key: ${{ secrets.SSHKEY }}
-            source: "output.so"
+            source: "main.so"
             target: "~/git/"
