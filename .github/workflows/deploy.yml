@@ -1,10 +1,10 @@
 name: Deploy
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Go"]
-    types:
-      - completed
+#   workflow_run:
+#     workflows: ["Go"]
+#     types:
+#       - completed
 jobs:
     transfer:
         runs-on: ubuntu-latest
