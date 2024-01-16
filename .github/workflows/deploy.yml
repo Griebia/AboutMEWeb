@@ -24,4 +24,5 @@ jobs:
             source: "main.so"
             target: "~/git/"
 
-        # - name: Restart the site
+        - name: Restart the site
+          run: curl -X POST --basic --user "${{secrets.WEBAPIKEY}} account=${{secrets.WEBACCOUNT}}}:" https://api.alwaysdata.com/v1/site/${{secrets.SITENUMBER}}}/restart/
