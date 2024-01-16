@@ -25,4 +25,4 @@ jobs:
             target: "~/git/"
 
         - name: Restart the site
-          run: curl -X POST --basic --user "${{secrets.WEBAPIKEY}} account=${{secrets.WEBACCOUNT}}}:" https://api.alwaysdata.com/v1/site/${{secrets.SITENUMBER}}}/restart/
+          run: curl -X POST --basic --user "${{secrets.WEBAPIKEY}} account=${{secrets.WEBACCOUNT}}:" https://api.alwaysdata.com/v1/site/${{secrets.SITENUMBER}}/restart/
