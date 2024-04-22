@@ -23,6 +23,7 @@ jobs:
 
     - name: Build
       run: |
+        go install github.com/a-h/templ/cmd/templ@latest
         templ generate
         go build -v ./...
 
