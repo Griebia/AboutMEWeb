@@ -4,6 +4,7 @@
 
 To start the application write
 ```
+go mod tidy
 go mod
 air
 ```
